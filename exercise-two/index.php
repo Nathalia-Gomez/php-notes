@@ -13,7 +13,7 @@
     </header>
 
 <table align="center">
-    <form action="pago.php" method="post">
+    <form action="index.php" method="post">
         <tr>
             <td width="200">Empleado</td>
             <td><input type="text" name="txtEmpleado" size="40"></td>
