@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <h1 class="centrado">PROBLEMA</h1>
+        <h1 class="centrado">ALGORITMO PARA CONVERTIR CENTÍMETROS A PULGADAS</h1>
         <!--Elaborar un algoritmo que convierta centímetros a pulgadas. (1 pulgada=2.54; Pulg=cm/2.54)-->
     </header>
 
