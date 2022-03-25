@@ -9,15 +9,18 @@
 </head>
 <body>
     <header>
+        <!--Realizar un programa que calcule el área de un círculo-->
         <h1 class="centrado">PROBLEMA</h1>
     </header>
 
     <main>
         <table align="center">
             <form action="index.php" method="post">
+               
+                
                 <tr>
-                    <td width="200">Horas</td>
-                    <td><input type="text" name="txtHoras" size="40"></td>
+                    <td width="200">Radio</td>
+                    <td><input type="text" name="txtRadio" size="40"></td>
                 </tr>
 
                 <tr>
@@ -29,21 +32,22 @@
                 <!--Código php-->
                 <?php
                 error_reporting(0);
-                $horas=$_POST["txtHoras"];
+                $radio=$_POST["txtRadio"];
+                $exponente=2;
 
                 //Realizar los cálculos
-                $salarioBruto=$horas*0.12;
+                $areaCirculo=3.1416*pow($radio,$exponente);
 
                 ?>
 
-                <!--<tr>
-                    <td>Empleado</td>
-                    <td><?php// echo $empleado;?></td>
-                </tr>-->
-                
                 <tr>
-                    <td>Tarifa horas</td>
-                    <td><?php echo "$".number_format($salarioBruto,2);?></td>
+                    <td>Radio</td>
+                    <td><?php echo number_format($radio,2);?></td>
+                </tr>
+
+                <tr>
+                    <td>Área</td>
+                    <td><?php echo number_format($areaCirculo,2);?></td>
                 </tr>
 
             </form>
